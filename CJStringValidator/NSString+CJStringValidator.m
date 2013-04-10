@@ -53,7 +53,7 @@
 }
 
 - (BOOL)isMinLength:(NSUInteger)min andMaxLength:(NSUInteger)max {
-    return ([self isLengthMin:min] && [self isLengthMax:max]);
+    return ([self isMinLength:min] && [self isMaxLength:max]);
 }
 
 - (BOOL)isEmpty {
