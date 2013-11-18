@@ -13,6 +13,8 @@
 - (BOOL)isPhoneNumber;
 - (BOOL)isDigit;
 - (BOOL)isNumeric;
+- (BOOL)isAlphanumeric;
+- (BOOL)hasBothCases;
 - (BOOL)isUrl;
 - (BOOL)isMinLength:(NSUInteger)length;
 - (BOOL)isMaxLength:(NSUInteger)length;
