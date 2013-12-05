@@ -9,6 +9,10 @@
 
 @implementation NSString (CJStringValidator)
 
++ (BOOL)isNilOrEmpty:(NSString *)input {
+    return !(input && ![input isEmpty]);
+}
+
 - (BOOL)isEmail {
     NSString *regex = @"[a-zA-Z0-9.\\-_]{2,32}@[a-zA-Z0-9.\\-_]{2,32}\\.[A-Za-z]{2,4}";
     NSPredicate *regExPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
