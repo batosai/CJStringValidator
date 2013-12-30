@@ -9,6 +9,7 @@
 
 @interface NSString (CJStringValidator)
 
++ (BOOL)isNilOrEmpty:(NSString *)input;
 - (BOOL)isEmail;
 - (BOOL)isPhoneNumber;
 - (BOOL)isDigit;
