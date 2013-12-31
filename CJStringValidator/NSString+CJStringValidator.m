@@ -10,7 +10,7 @@
 @implementation NSString (CJStringValidator)
 
 + (BOOL)isNilOrEmpty:(NSString *)input {
-    return !(input && ![input isEmpty]);
+	return !input || [input isEmpty];
 }
 
 - (BOOL)isEmail {
